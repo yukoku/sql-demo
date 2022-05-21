@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS Personnel
 CREATE TABLE IF NOT EXISTS Badges
 (
   badge_nbr INTEGER NOT NULL PRIMARY KEY,
-  emp_id NOT NULL REFRENCES Personnel(emp_id),
+  emp_id INTEGER NOT NULL REFERENCES Personnel(emp_id),
   issued_date DATE NOT NULL,
   badge_status CHAR(1) NOT NULL
     CHECK(badge_status IN ('A', 'I')),
