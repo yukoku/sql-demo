@@ -1,0 +1,13 @@
+-- 空席と使用中の座席を二つのテーブルでやり取りする
+CREATE TABLE IF NOT EXISTS VacantSeats
+(
+  id INTEGER NOT NULL PRIMARY KEY
+)
+;
+CREATE TABLE IF NOT EXISTS OccupiedSeats
+(
+  id INTEGER NOT NULL PRIMARY KEY
+)
+;
+
+
